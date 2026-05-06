@@ -1,111 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stephanie Almquist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stephanie Almquist</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background: #ffffff;
-      color: #111;
-      line-height: 1.7;
-    }
+<style>
+:root {
+  --bg: #f4f1ea;
+  --text: #111;
+  --muted: #555;
+  --accent: #2f5d7c;
+}
 
-    .container {
-      max-width: 750px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-    header {
-      margin-bottom: 60px;
-    }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-      letter-spacing: -0.5px;
-    }
+/* NAV */
+nav {
+  font-family: Arial, sans-serif;
+  margin-bottom: 50px;
+}
 
-    .tagline {
-      font-size: 18px;
-      color: #444;
-      font-family: Arial, sans-serif;
-    }
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--muted);
+}
 
-    h2 {
-      margin-top: 50px;
-      font-size: 20px;
-      font-family: Arial, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+nav a:hover {
+  color: var(--accent);
+}
 
-    a {
-      color: #111;
-      text-decoration: underline;
-    }
+/* HERO */
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    ul {
-      padding-left: 18px;
-    }
+.hero img {
+  width: 180px;
+  border-radius: 8px;
+}
 
-    .entry {
-      margin-bottom: 12px;
-    }
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
 
-    footer {
-      margin-top: 80px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+.tagline {
+  font-family: Arial, sans-serif;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.section {
+  max-width: 700px;
+}
+
+.quote {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+footer {
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <header>
-      <h1>Stephanie Almquist</h1>
-      <div class="tagline">Writer of essays, memoir, and literary nonfiction</div>
-    </header>
+<div class="container">
 
-    <section>
-      <h2>Selected Writing</h2>
-      <div class="entry"><a href="#">Essay Title One</a></div>
-      <div class="entry"><a href="#">Essay Title Two</a></div>
-      <div class="entry"><a href="#">Essay Title Three</a></div>
-    </section>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Writing</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
 
-    <section>
-      <h2>About</h2>
-      <p>
-        Stephanie Almquist is a writer working across essays, memoir, and narrative nonfiction.
-        Her work explores language, memory, and the textures of lived experience.
-      </p>
-    </section>
+<div class="hero">
+  <img src="profile.jpg" alt="Stephanie Almquist">
 
-    <section>
-      <h2>Publications</h2>
-      <ul>
-        <li>Publication Name — Essay Title</li>
-        <li>Publication Name — Essay Title</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
-    </section>
-
-    <footer>
-      © Stephanie Almquist
-    </footer>
-
+  <div>
+    <h1>Stephanie Almquist</h1>
+    <div class="tagline">
+      Writer | PhD Flavor Scientist | Exploring flavor as language
+    </div>
   </div>
+</div>
+
+<!-- WRITING -->
+<section class="section">
+<h2>Selected Writing</h2>
+
+<ul>
+  <li><a href="#">The Shape of Memory in Taste</a></li>
+  <li><a href="#">Flavor as Structure, Not Sensation</a></li>
+  <li><a href="#">What We Miss When We Eat Too Fast</a></li>
+</ul>
+</section>
+
+<!-- FLUENT IN FLAVOR -->
+<section class="section">
+<h2>Fluent in Flavor</h2>
+
+<p class="quote">
+“Flavor is not instinct—it is a language that can be learned, structured, and communicated.”
+</p>
+
+<p>
+Fluent in Flavor is an ongoing project exploring flavor as a system of meaning.
+I approach taste, aroma, and texture as elements of a structured sensory language.
+</p>
+
+<ul>
+  <li><strong>Vocabulary:</strong> individual sensory components</li>
+  <li><strong>Grammar:</strong> how flavors combine and change meaning</li>
+  <li><strong>Context & dialect:</strong> how culture and memory shape interpretation</li>
+  <li><strong>Pragmatics:</strong> what flavor communicates socially and emotionally</li>
+</ul>
+
+<p>
+Most people experience flavor passively. My work focuses on training attention—
+learning to isolate sensory components and perceive subtle changes, much like learning
+to hear individual instruments in music.
+</p>
+
+<p class="quote">
+“People don’t just taste food—they interpret a structured sensory language without knowing the rules.”
+</p>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+<h2>About</h2>
+
+<p>
+I am a writer and PhD flavor scientist exploring the intersection of science, culture, and perception.
+My work examines flavor as both a biochemical process and a cultural system—one that shapes memory,
+identity, and how we interpret the world.
+</p>
+
+<p>
+Through essays and creative nonfiction, I translate complex scientific ideas into accessible,
+engaging frameworks that readers can apply to everyday life.
+</p>
+
+<p>
+My perspective is shaped by work across disciplines including science, music, language learning,
+athletics, and travel.
+</p>
+
+</section>
+
+<!-- LINKS -->
+<section class="section">
+<h2>Elsewhere</h2>
+
+<ul>
+  <li><a href="https://substack.com/@fluentinflavor" target="_blank">Substack (Essays)</a></li>
+  <li><a href="https://www.wattpad.com/user/FluentinFlavor" target="_blank">Wattpad (Creative Writing)</a></li>
+  <li><a href="#">italki</a></li>
+  <li><a href="#">Etsy</a></li>
+</ul>
+
+</section>
+
+<footer>
+© Stephanie Almquist 2026
+</footer>
+
+</div>
+
 </body>
 </html>
